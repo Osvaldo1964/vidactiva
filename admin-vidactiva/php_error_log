@@ -24516,3 +24516,5 @@ Stack trace:
 [25-Sep-2025 08:47:34 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\gic\admin-gic\views\modules\sidebar.php on line 76
 [02-Oct-2025 12:49:35 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\gic\admin-gic\views\modules\sidebar.php on line 76
 [02-Oct-2025 12:49:35 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\gic\admin-gic\views\modules\sidebar.php on line 76
+[03-Oct-2025 15:15:23 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[03-Oct-2025 15:15:23 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
