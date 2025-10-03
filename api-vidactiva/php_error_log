@@ -1,0 +1,119 @@
+[30-Mar-2025 01:51:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Firebase\JWT\JWT" not found in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php:77
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\routes\services\post.php(37): PostController::postLogin('users', Array, 'user')
+#1 C:\xampp\htdocs\gic\api-gic\routes\routes.php(57): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php on line 77
+[30-Mar-2025 03:01:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Firebase\JWT\JWT" not found in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php:77
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\routes\services\post.php(37): PostController::postLogin('users', Array, 'user')
+#1 C:\xampp\htdocs\gic\api-gic\routes\routes.php(57): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php on line 77
+[31-Mar-2025 20:42:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id_school = ' 198'' at line 1 in C:\xampp\htdocs\gic\api-gic\models\put.model.php:37
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\models\put.model.php(37): PDOStatement->execute()
+#1 C:\xampp\htdocs\gic\api-gic\controllers\put.controller.php(10): PutModel::putData('schools', Array, ' 198', 'id_school')
+#2 C:\xampp\htdocs\gic\api-gic\routes\services\put.php(68): PutController::putData('schools', Array, ' 198', 'id_school')
+#3 C:\xampp\htdocs\gic\api-gic\routes\routes.php(63): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\models\put.model.php on line 37
+[31-Mar-2025 20:43:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id_school = '198'' at line 1 in C:\xampp\htdocs\gic\api-gic\models\put.model.php:37
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\models\put.model.php(37): PDOStatement->execute()
+#1 C:\xampp\htdocs\gic\api-gic\controllers\put.controller.php(10): PutModel::putData('schools', Array, '198', 'id_school')
+#2 C:\xampp\htdocs\gic\api-gic\routes\services\put.php(68): PutController::putData('schools', Array, '198', 'id_school')
+#3 C:\xampp\htdocs\gic\api-gic\routes\routes.php(63): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\models\put.model.php on line 37
+[31-Mar-2025 20:44:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id_school = '198'' at line 1 in C:\xampp\htdocs\gic\api-gic\models\put.model.php:37
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\models\put.model.php(37): PDOStatement->execute()
+#1 C:\xampp\htdocs\gic\api-gic\controllers\put.controller.php(10): PutModel::putData('schools', Array, '198', 'id_school')
+#2 C:\xampp\htdocs\gic\api-gic\routes\services\put.php(68): PutController::putData('schools', Array, '198', 'id_school')
+#3 C:\xampp\htdocs\gic\api-gic\routes\routes.php(63): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\models\put.model.php on line 37
+[31-Mar-2025 21:06:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id_school = '198'' at line 1 in C:\xampp\htdocs\gic\api-gic\models\put.model.php:37
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\models\put.model.php(37): PDOStatement->execute()
+#1 C:\xampp\htdocs\gic\api-gic\controllers\put.controller.php(10): PutModel::putData('schools', Array, '198', 'id_school')
+#2 C:\xampp\htdocs\gic\api-gic\routes\services\put.php(68): PutController::putData('schools', Array, '198', 'id_school')
+#3 C:\xampp\htdocs\gic\api-gic\routes\routes.php(63): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\models\put.model.php on line 37
+[01-Apr-2025 03:54:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Firebase\JWT\JWT" not found in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php:77
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\routes\services\post.php(37): PostController::postLogin('users', Array, 'user')
+#1 C:\xampp\htdocs\gic\api-gic\routes\routes.php(57): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php on line 77
+[11-Apr-2025 15:35:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Firebase\JWT\JWT" not found in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php:77
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\routes\services\post.php(37): PostController::postLogin('users', Array, 'user')
+#1 C:\xampp\htdocs\gic\api-gic\routes\routes.php(57): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php on line 77
+[17-Apr-2025 03:19:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Firebase\JWT\JWT" not found in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php:77
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\routes\services\post.php(37): PostController::postLogin('users', Array, 'user')
+#1 C:\xampp\htdocs\gic\api-gic\routes\routes.php(57): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php on line 77
+[18-Apr-2025 21:23:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Firebase\JWT\JWT" not found in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php:77
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\routes\services\post.php(37): PostController::postLogin('users', Array, 'user')
+#1 C:\xampp\htdocs\gic\api-gic\routes\routes.php(57): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php on line 77
+[06-May-2025 17:37:04 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\gic\api-gic\models\connection.php on line 60
+[06-May-2025 17:38:48 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\gic\api-gic\models\connection.php on line 60
+[06-May-2025 17:56:30 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\gic\api-gic\models\connection.php on line 60
+[06-May-2025 18:04:28 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\gic\api-gic\models\connection.php on line 60
+[06-May-2025 18:06:03 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\gic\api-gic\models\connection.php on line 60
+[06-May-2025 18:09:05 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\gic\api-gic\models\connection.php on line 60
+[06-May-2025 18:09:37 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\gic\api-gic\models\connection.php on line 60
+[22-Aug-2025 15:15:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Firebase\JWT\JWT" not found in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php:77
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\routes\services\post.php(37): PostController::postLogin('users', Array, 'user')
+#1 C:\xampp\htdocs\gic\api-gic\routes\routes.php(57): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php on line 77
+[22-Aug-2025 15:59:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Firebase\JWT\JWT" not found in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php:77
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\routes\services\post.php(37): PostController::postLogin('users', Array, 'user')
+#1 C:\xampp\htdocs\gic\api-gic\routes\routes.php(57): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php on line 77
+[02-Sep-2025 14:28:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Firebase\JWT\JWT" not found in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php:77
+Stack trace:
+#0 C:\xampp\htdocs\gic\api-gic\routes\services\post.php(37): PostController::postLogin('users', Array, 'user')
+#1 C:\xampp\htdocs\gic\api-gic\routes\routes.php(57): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\gic\api-gic\controllers\routes.controller.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\gic\api-gic\index.php(21): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\gic\api-gic\controllers\post.controller.php on line 77
