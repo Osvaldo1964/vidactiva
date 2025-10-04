@@ -24520,3 +24520,22 @@ Stack trace:
 [03-Oct-2025 15:15:23 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
 [04-Oct-2025 09:35:10 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
 [04-Oct-2025 09:35:10 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[04-Oct-2025 11:32:41 America/Bogota] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\pqrs\actions\manualnew.php on line 30
+[04-Oct-2025 11:51:50 America/Bogota] PHP Warning:  Undefined variable $idPqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 30
+[04-Oct-2025 11:51:50 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method PqrsController::solved() in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php:36
+Stack trace:
+#0 C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\setpqrs.php(34): include()
+#1 C:\xampp\htdocs\vidactiva\admin-vidactiva\views\template.php(279): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\template.controller.php(18): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vidactiva\admin-vidactiva\index.php(31): TemplateController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[04-Oct-2025 11:52:29 America/Bogota] PHP Warning:  Undefined variable $idPqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 30
+[04-Oct-2025 11:52:29 America/Bogota] PHP Fatal error:  Uncaught Error: Call to undefined method PqrsController::solved() in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php:36
+Stack trace:
+#0 C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\setpqrs.php(34): include()
+#1 C:\xampp\htdocs\vidactiva\admin-vidactiva\views\template.php(279): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\template.controller.php(18): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\vidactiva\admin-vidactiva\index.php(31): TemplateController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36

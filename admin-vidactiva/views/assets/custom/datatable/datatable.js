@@ -277,7 +277,7 @@ function execDatatable(text) {
         page = "crews";
     }
 
-    /* Valido Tabla Cuadrillas*/
+    /* Valido Tabla PQRs */
     if ($(".tablePqrs").length > 0) {
 
         var url = "ajax/data-setpqrs.php?text=" + text + "&between1=" + $("#between1").val() + "&between2=" + $("#between2").val() + "&token=" + localStorage.getItem("token_user")

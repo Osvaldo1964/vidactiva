@@ -82,13 +82,13 @@
 
         <div class="card-footer">
             <?php
-            require_once "controllers/schools.controller.php";
-            $create = new SchoolsController();
+            require_once "controllers/centers.controller.php";
+            $create = new centersController();
             $create->create();
             ?>
             <div class="col-md-8 offset-md-2">
                 <div class="form-group mt-1">
-                    <a href="/schools" class="btn btn-light border text-left">Regresar</a>
+                    <a href="/centers" class="btn btn-light border text-left">Regresar</a>
                     <?php
                     if ($_SESSION["rols"]->name_class == "ADMINISTRADOR" || $_SESSION["rols"]->name_class == "SUPERVISOR") {
                     ?>
