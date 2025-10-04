@@ -9,7 +9,7 @@ $rolUser = $_SESSION["user"]->id_class_user;
     <!-- Brand Logo -->
     <a href="/" class="brand-link bg-info">
         <!-- <img src="views/assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
-        <span class="brand-text font-weight-light ml-3"> S.G.I.C.</span>
+        <span class="brand-text font-weight-light ml-3"> S.G.I.A.M.</span>
     </a>
 
     <!-- Sidebar -->
@@ -183,9 +183,9 @@ $rolUser = $_SESSION["user"]->id_class_user;
                                 </a>
                                 <ul class="nav nav-treeview">
                                     <li class="nav-item">
-                                        <a href="/schools" class="nav-link <?php if (!empty($routesArray[1]) && $routesArray[1] == "schools") : ?>active bg-info<?php endif ?>">
+                                        <a href="/centers" class="nav-link <?php if (!empty($routesArray[1]) && $routesArray[1] == "centers") : ?>active bg-info<?php endif ?>">
                                             <i class="far fa-circle nav-icon"></i>
-                                            <p>Instituciones</p>
+                                            <p>Centros de Atención</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -278,7 +278,7 @@ $rolUser = $_SESSION["user"]->id_class_user;
                             <ul class="nav nav-treeview">
                                 <?php if (in_array($rolUser, [1, 2, 3])) { ?>
                                     <li class="nav-item">
-                                        <a href="/schools" class="nav-link <?php if (!empty($routesArray[1]) && $routesArray[1] == "schools") : ?>active bg-info<?php endif ?>">
+                                        <a href="/centers" class="nav-link <?php if (!empty($routesArray[1]) && $routesArray[1] == "centers") : ?>active bg-info<?php endif ?>">
                                             <i class="far fa-circle nav-icon"></i>
                                             <p>Centros de Interés</p>
                                         </a>
@@ -590,16 +590,12 @@ $rolUser = $_SESSION["user"]->id_class_user;
         </nav>
         <!-- /.sidebar-menu -->
         <br><br>
-        <div class="col-md-2">
-            <img src="<?php echo TemplateController::srcImg() ?>views/img/users/logo_min.png" style="ml-10 width:50px" alt="User Image">
-        </div>
-        <br><br><br><br>
-        <div class="col-md-2">
-            <img src="<?php echo TemplateController::srcImg() ?>views/img/users/logo_ent.png" style="ml-10 width:100px" alt="User Image">
-        </div>
+        <div class="container justify-content: center; text-align: center;">
+            <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_fundaescol.jpg" width="200" alt="User Image">
+        <br><br><br>
+            <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_dpto.png" width="200" alt="User Image">
         <br><br>
-        <div class="col-md-2">
-            <img src="<?php echo TemplateController::srcImg() ?>views/img/users/logo2.png" style="ml-10 width:100px" alt="User Image">
+            <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_entre.png" alt="User Image">
         </div>
     </div>
     <!-- /.sidebar -->
