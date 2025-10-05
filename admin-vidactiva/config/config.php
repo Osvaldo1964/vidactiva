@@ -44,23 +44,23 @@ const URLPAYPAL = "https://api-m.sandbox.paypal.com";
 //const URLPAYPAL = "https://api-m.paypal.com";
 
 //Datos envio de correo
-const NOMBRE_REMITENTE = "Sistema Integrado de Contratación";
-const EMAIL_REMITENTE = "correspondencia@sialp-app.com";
-const NOMBRE_EMPRESA = "SERVICIOS POSTALES NACIONALES S.A. 4-72";
-const WEB_EMPRESA = "https://gic.apps-colombia.com";
+const NOMBRE_REMITENTE = "Sistema Integrado de Control Centros de Atención Adulto Mayor";
+const EMAIL_REMITENTE = "info@vidactiva.com.co";
+const NOMBRE_EMPRESA = "UNION TEMPORAL VIDA PLENA";
+const WEB_EMPRESA = "https://admin.vidactiva.com.co";
 
-const DESCRIPCION = "Sistema Integrado de Control Alumbrado Público.";
+const DESCRIPCION = "Sistema Integrado de Control Centros de Atención Adulto Mayor";
 const SHAREDHASH = "SialpApp";
 
 //Datos Empresa
-const DIRECCION = "Carrera 11 No. 6-20 San Francisco, Santa Marta";
+const DIRECCION = "CR 11 17 06 BRR TERRITORIAL, Santa Marta";
 const TELEMPRESA = "+(57)3023898254";
 const WHATSAPP = "+573023898254";
-const EMAIL_EMPRESA = "correspondencia@sialp-app.com";
-const EMAIL_PEDIDOS = "ventas@vitalfood.com.co";
-const EMAIL_CONTACTO = "ventas@vitalfood.com.co";
-const EMAIL_PQR = "pqrs@sialp-app.com";
-const EMAIL_SUSCRIPCION = "suscripciones@sialp-app.com";
+const EMAIL_EMPRESA = "info@vidactiva.com.co";
+const EMAIL_PEDIDOS = "";
+const EMAIL_CONTACTO = "info@vidactiva.com.co";
+const EMAIL_PQR = "pqrs@vidactiva.com";
+const EMAIL_SUSCRIPCION = "info@vidactiva.com";
 
 const CAT_SLIDER = "1,2,3";
 const CAT_BANNER = "4,5,6";

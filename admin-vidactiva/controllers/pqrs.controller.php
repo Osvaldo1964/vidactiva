@@ -105,7 +105,7 @@ class PqrsController
 
                     /* Agrupamos la información */
                     $data = "dateasign_pqr=" . $_POST["dateasign"] .
-                        "&id_crew_pqr=" . trim(TemplateController::capitalize($_POST["crew"])) .
+                        "&id_user_pqr=" . $_POST["username"] .
                         "&status_pqr=" . "Assign";
 
                     /* Solicitud a la API */

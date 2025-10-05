@@ -42,8 +42,9 @@ if (isset($_GET["start"]) && isset($_GET["end"])) {
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Código</th>
-                    <th>Descripción</th>
+                    <th>Nombre</th>
+                    <th>E-mail</th>
+                    <th>Detalle PQR</th>
                     <th>Fecha Creacion</th>
                     <th>Estado</th>
                     <th>Acciones</th>

@@ -11,7 +11,7 @@ $assign = $response->results[0];
 
 <div class="card card-dark card-outline" id="sAssign">
     <div class="card-header">
-        <img src="<?php echo TemplateController::srcImg() ?>views/assets/img/logo2.png" style="width:200px" alt="User Image">
+        <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_entre.png" style="width:200px" alt="User Image">
     </div>
     <div class="card-body">
         <div class="row invoice-info">
@@ -31,19 +31,14 @@ $assign = $response->results[0];
         </div>
         <div class="row">
             <div class="col-12 table-responsive mt-5">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th colspan="1" class="text-left">Observaciones: </th>
-
-                            <td colspan="2" class="text-left">____________________________________________</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                    <tfoot>
-                    </tfoot>
-                </table>
+                <span><strong>Asignado a:</strong> <?= $assign->fullname_user; ?></span>
+                <br>
+                <hr>
+                <span><strong>Detalle PQR:</strong></span>
+                <br><br><br>
+                ______________________________________________________________________________________________________________________
+                <br><br>
+                ______________________________________________________________________________________________________________________
             </div>
         </div>
     </div>

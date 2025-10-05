@@ -286,7 +286,6 @@ function execDatatable(text) {
             { "data": "id_pqr" },
             { "data": "name_pqr" },
             { "data": "email_pqr" },
-            { "data": "address_pqr" },
             { "data": "message_pqr" },
             { "data": "date_created_pqr" },
             { "data": "status_pqr" },

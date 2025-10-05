@@ -3,11 +3,11 @@ if (isset($routesArray[3])) {
     $security = explode("~", base64_decode($routesArray[3]));
     if ($security[1] == $_SESSION["user"]->token_user) {
         $select = "*";
-        $url = "relations?rel=pqrs,users&type=pqr,user&select=" .
-            $select . "&linkTo=id_pqr&equalTo=" . $security[0];
+        $url = "relations?rel=pqrs,users&type=pqr,user&select=" . $select . "&linkTo=id_pqr&equalTo=" . $security[0];
         $method = "GET";
         $fields = array();
         $response = CurlController::request($url, $method, $fields);
+        //echo '<pre>'; print_r($response); echo '</pre>';
 
         if ($response->status == 200) {
             $pqrs = $response->results[0];

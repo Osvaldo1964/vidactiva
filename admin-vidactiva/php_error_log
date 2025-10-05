@@ -24539,3 +24539,41 @@ Stack trace:
 #3 C:\xampp\htdocs\vidactiva\admin-vidactiva\index.php(31): TemplateController->index()
 #4 {main}
   thrown in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[05-Oct-2025 10:18:40 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[05-Oct-2025 10:18:40 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[05-Oct-2025 10:27:32 America/Bogota] PHP Warning:  Undefined variable $idPqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 30
+[05-Oct-2025 10:27:32 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[05-Oct-2025 10:27:32 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[05-Oct-2025 10:27:32 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 45
+[05-Oct-2025 10:27:32 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 45
+[05-Oct-2025 10:27:32 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
+[05-Oct-2025 10:27:32 America/Bogota] PHP Warning:  Attempt to read property "id_crew_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
+[05-Oct-2025 10:27:32 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[05-Oct-2025 10:27:32 America/Bogota] PHP Warning:  Attempt to read property "dateasign_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[05-Oct-2025 10:27:49 America/Bogota] PHP Warning:  Undefined variable $idPqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 30
+[05-Oct-2025 10:27:49 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[05-Oct-2025 10:27:49 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[05-Oct-2025 10:27:49 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 45
+[05-Oct-2025 10:27:49 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 45
+[05-Oct-2025 10:27:49 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
+[05-Oct-2025 10:27:49 America/Bogota] PHP Warning:  Attempt to read property "id_crew_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
+[05-Oct-2025 10:27:49 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[05-Oct-2025 10:27:49 America/Bogota] PHP Warning:  Attempt to read property "dateasign_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[05-Oct-2025 10:29:05 America/Bogota] PHP Warning:  Undefined variable $idPqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 30
+[05-Oct-2025 10:29:05 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[05-Oct-2025 10:29:05 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[05-Oct-2025 10:29:05 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 45
+[05-Oct-2025 10:29:05 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 45
+[05-Oct-2025 10:29:05 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
+[05-Oct-2025 10:29:05 America/Bogota] PHP Warning:  Attempt to read property "id_crew_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
+[05-Oct-2025 10:29:05 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[05-Oct-2025 10:29:05 America/Bogota] PHP Warning:  Attempt to read property "dateasign_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Undefined variable $idPqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 30
+[05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 45
+[05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 45
+[05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
+[05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Attempt to read property "id_crew_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
+[05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Attempt to read property "dateasign_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
