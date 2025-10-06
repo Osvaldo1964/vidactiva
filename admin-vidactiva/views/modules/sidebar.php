@@ -185,7 +185,7 @@ $rolUser = $_SESSION["user"]->id_class_user;
                                     <li class="nav-item">
                                         <a href="/centers" class="nav-link <?php if (!empty($routesArray[1]) && $routesArray[1] == "centers") : ?>active bg-info<?php endif ?>">
                                             <i class="far fa-circle nav-icon"></i>
-                                            <p>Centros de Atención</p>
+                                            <p>Centros de Bienestar</p>
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -280,7 +280,7 @@ $rolUser = $_SESSION["user"]->id_class_user;
                                     <li class="nav-item">
                                         <a href="/centers" class="nav-link <?php if (!empty($routesArray[1]) && $routesArray[1] == "centers") : ?>active bg-info<?php endif ?>">
                                             <i class="far fa-circle nav-icon"></i>
-                                            <p>Centros de Interés</p>
+                                            <p>Centros de Bienestar</p>
                                         </a>
                                     </li>
                                 <?php } ?>

@@ -24577,3 +24577,7 @@ Stack trace:
 [05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Attempt to read property "id_crew_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
 [05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Undefined variable $pqrs in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
 [05-Oct-2025 10:29:08 America/Bogota] PHP Warning:  Attempt to read property "dateasign_pqr" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[06-Oct-2025 11:14:31 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[06-Oct-2025 11:14:31 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[06-Oct-2025 11:14:41 America/Bogota] PHP Warning:  Undefined variable $students in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\centers\actions\edit.php on line 66
+[06-Oct-2025 11:14:41 America/Bogota] PHP Warning:  Attempt to read property "id_center_student" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\centers\actions\edit.php on line 66

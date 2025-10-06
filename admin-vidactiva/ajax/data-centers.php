@@ -31,7 +31,7 @@ class DatatableController
 
 			$response = CurlController::request($url, $method, $fields);
 
-			//echo '<pre>'; print_r($response); echo '</pre>';exit;
+			//echo '<pre>'; print_r($response); echo '</pre>';exit; 
 			if ($response->status == 200) {
 				$totalData = $response->total;
 			} else {
@@ -42,7 +42,7 @@ class DatatableController
 			//echo '<pre>'; print_r($response); echo '</pre>';exit; 
 
 			/* Búsqueda de datos */
-			$select = "id_center,id_department_center,name_department,id_municipality_center,name_municipality,level_center,org_center,sector_center,dane_center,name_center,address_center,email_center,phone_center";
+			$select = "id_center,id_department_center,name_department,id_municipality_center,name_municipality,name_center,address_center,email_center,phone_center";
 
 			if (!empty($_POST['search']['value'])) {
 				$data = array();
@@ -117,7 +117,6 @@ class DatatableController
 
 				$name_department = $value->name_department;
 				$name_municipality = $value->name_municipality;
-				$dane_center = $value->dane_center;
 				$name_center = $value->name_center;
 				$address_center = $value->address_center;
 				$email_center = $value->email_center;

@@ -2,8 +2,8 @@
 if (isset($routesArray[3])) {
     $security = explode("~", base64_decode($routesArray[3]));
     if ($security[1] == $_SESSION["user"]->token_user) {
-        $select = "id_school,id_department_school,id_department,name_department,id_municipality_school,id_municipality,name_municipality,dane_school,secr_school,name_school,level_school,org_school,sector_school,address_school,email_school,phone_school";
-        $url = "relations?rel=schools,departments,municipalities&type=school,department,municipality&select=" . $select . "&linkTo=id_school&equalTo=" . $security[0];
+        $select = "id_center,id_department_center,id_department,name_department,id_municipality_center,id_municipality,name_municipality,name_center,address_center,email_center,phone_center";
+        $url = "relations?rel=centers,departments,municipalities&type=center,department,municipality&select=" . $select . "&linkTo=id_center&equalTo=" . $security[0];
         $method = "GET";
         $fields = array();
         $response = CurlController::request($url, $method, $fields);
@@ -12,35 +12,35 @@ if (isset($routesArray[3])) {
 
 
         if ($response->status == 200) {
-            $schools = $response->results[0];
-            $dpselected = $schools->id_department_school;
-            $mnselected = $schools->id_municipality_school;
-            $scselected = $schools->id_school;
+            $centers = $response->results[0];
+            $dpselected = $centers->id_department_center;
+            $mnselected = $centers->id_municipality_center;
+            $scselected = $centers->id_center;
         } else {
             echo '<script>
-				window.location = "/schools";
+				window.location = "/centers";
 				</script>';
         }
     } else {
         echo '<script>
-				window.location = "/schools";
+				window.location = "/centers";
 				</script>';
     }
 }
 ?>
 <div class="card card-dark card-outline">
     <form method="post" class="needs-validation" novalidate enctype="multipart/form-data">
-        <input type="hidden" value="1" name="placeschool" id="placeStudent">
+        <input type="hidden" value="1" name="placecenter" id="placeStudent">
         <input type="hidden" value="<?php echo $dpselected ?>" name="dpSelected" id="dpSelected">
         <input type="hidden" value="<?php echo $mnselected ?>" name="mnSelected" id="mnSelected">
         <input type="hidden" value="<?php echo $scselected ?>" name="scSelected" id="scSelected">
         <input type="hidden" value="1" name="edReg" id="edReg">
-        <input type="hidden" value="<?php echo $schools->id_school ?>" name="idSchool">
+        <input type="hidden" value="<?php echo $centers->id_center ?>" name="idcenter">
         <div class="card-header">
             <?php
-            require_once "controllers/schools.controller.php";
-            $create = new schoolsController();
-            $create->edit($schools->id_school);
+            require_once "controllers/centers.controller.php";
+            $create = new centersController();
+            $create->edit($centers->id_center);
             ?>
         </div>
         <div class="card-body">
@@ -51,7 +51,7 @@ if (isset($routesArray[3])) {
                         <label>Departamento</label>
                         <div class="form-group">
                             <select class="form-control select2 dpto_student" name="dpto_student" id="dpto_student" style="width:100%"
-                                edReg="1" mnSelected="<?php echo $schools->id_municipality_school ?>" required>
+                                edReg="1" mnSelected="<?php echo $centers->id_municipality_center ?>" required>
                             </select>
 
                             <div class="valid-feedback">Valid.</div>
@@ -63,7 +63,7 @@ if (isset($routesArray[3])) {
                         <label>Municipio</label>
                         <div class="form-group">
                             <select class="form-control select2 muni_student" name="muni_student" id="muni_student" style="width:100%"
-                                edReg="1" scSelected="<?php echo $students->id_school_student ?>" required>
+                                edReg="1" scSelected="<?php echo $students->id_center_student ?>" required>
                             </select>
 
                             <div class="valid-feedback">Valid.</div>
@@ -71,44 +71,12 @@ if (isset($routesArray[3])) {
                         </div>
                     </div>
 
-                    <!-- Código DANE -->
-                    <div class="form-group col-md-3">
-                        <label>Dane</label>
-                        <input type="text" class="form-control"
-                            onchange="validateJS(event,'regex')"
-                            value="<?php echo $schools->dane_school ?>" name="dane" id="dane" required>
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                    </div>
-
-                    <!-- Secretaría de Educación -->
-                    <div class="form-group col-md-3">
-                        <label>Secretaría de Educación</label>
-                        <?php
-                        $secs = file_get_contents("views/assets/json/secs.json");
-                        $secs = json_decode($secs, true);
-                        ?>
-                        <select class="form-control select2" name="secr" required>
-                            <?php foreach ($secs as $key => $value) : ?>
-                                <?php if ($value["name"] == $schools->secr_school) : ?>
-                                    <option value="<?php echo $schools->secr_school ?>" selected><?php echo $schools->secr_school ?></option>
-                                <?php else : ?>
-                                    <option value="<?php echo $value["name"] ?>"><?php echo $value["name"] ?></option>
-                                <?php endif ?>
-                            <?php endforeach ?>
-                        </select>
-
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                    </div>
-
                     <!-- Nombre Institución -->
                     <div class="form-group col-md-6">
                         <label>Nombre Institución</label>
                         <input type="text" class="form-control"
                             onchange="validateJS(event,'regex')" name="name" id="name"
-                            value="<?php echo $schools->name_school ?>" required>
+                            value="<?php echo $centers->name_center ?>" required>
 
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
@@ -119,7 +87,7 @@ if (isset($routesArray[3])) {
                         <label>Dirección</label>
                         <input type="text" class="form-control" pattern='.*'
                             name="address"
-                            value="<?php echo $schools->address_school ?>" required>
+                            value="<?php echo $centers->address_center ?>" required>
 
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
@@ -130,7 +98,7 @@ if (isset($routesArray[3])) {
                         <div class="form-group col-md-6">
                             <label>Email</label>
                             <input type="email" class="form-control" pattern="[.a-zA-Z0-9_]+([.][.a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}" name="email"
-                                value="<?php echo $schools->email_school ?>" required>
+                                value="<?php echo $centers->email_center ?>" required>
 
                             <div class="valid-feedback">Valid.</div>
                             <div class="invalid-feedback">Please fill out this field.</div>
@@ -144,61 +112,8 @@ if (isset($routesArray[3])) {
                                     <span class="input-group-text dialCode">+57</span>
                                 </div>
                                 <input type="text" class="form-control" pattern="^-?\d+(\.\d+)?$" onchange="validateJS(event,'phone')" name="phone"
-                                    value="<?php echo $schools->phone_school ?>" required>
+                                    value="<?php echo $centers->phone_center ?>" required>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row col-md-12">
-                        <!-- Nivel -->
-                        <div class="input-group col-md-3">
-                            <?php
-                            $levels = file_get_contents("views/assets/json/levels.json");
-                            $levels = json_decode($levels, true);
-                            ?>
-                            <label class="input-group-text" for="level_school">Nivel</label>
-                            <select class="form-select" name="level_school" id="level_school" required>
-                                <?php foreach ($levels as $key => $value) : ?>
-                                    <?php if ($value["name"] == $schools->level_school) : ?>
-                                        <option value="<?php echo $schools->level_school ?>" selected><?php echo $schools->level_school ?></option>
-                                    <?php else : ?>
-                                        <option value="<?php echo $value["name"] ?>"><?php echo $value["name"] ?></option>
-                                    <?php endif ?>
-                                <?php endforeach ?>
-                            </select>
-                        </div>
-                        <!-- Organización -->
-                        <div class="input-group col-md-3">
-                            <?php
-                            $orgs = file_get_contents("views/assets/json/orgs.json");
-                            $orgs = json_decode($orgs, true);
-                            ?>
-                            <label class="input-group-text" for="org_school">Organización</label>
-                            <select class="form-select" name="org_school" id="org_school" required>
-                                <?php foreach ($orgs as $key => $value) : ?>
-                                    <?php if ($value["name"] == $schools->org_school) : ?>
-                                        <option value="<?php echo $schools->org_school ?>" selected><?php echo $schools->org_school ?></option>
-                                    <?php else : ?>
-                                        <option value="<?php echo $value["name"] ?>"><?php echo $value["name"] ?></option>
-                                    <?php endif ?>
-                                <?php endforeach ?>
-                            </select>
-                        </div>
-                        <!-- Sector -->
-                        <div class="input-group col-md-3">
-                            <?php
-                            $sectors = file_get_contents("views/assets/json/sectors.json");
-                            $sectors = json_decode($sectors, true);
-                            ?>
-                            <label class="input-group-text" for="sector_school">Sector</label>
-                            <select class="form-select" name="sector_school" id="sector_school" required>
-                                <?php foreach ($sectors as $key => $value) : ?>
-                                    <?php if ($value["name"] == $schools->sector_school) : ?>
-                                        <option value="<?php echo $schools->sector_school ?>" selected><?php echo $schools->sector_school ?></option>
-                                    <?php else : ?>
-                                        <option value="<?php echo $value["name"] ?>"><?php echo $value["name"] ?></option>
-                                    <?php endif ?>
-                                <?php endforeach ?>
-                            </select>
                         </div>
                     </div>
                 </div>
@@ -207,7 +122,7 @@ if (isset($routesArray[3])) {
         <div class="card-footer">
             <div class="col-md-8 offset-md-2">
                 <div class="form-group mt-1">
-                    <a href="/schools" class="btn btn-light border text-left">Regresar</a>
+                    <a href="/centers" class="btn btn-light border text-left">Regresar</a>
                     <?php
                     if ($_SESSION["rols"]->name_class == "ADMINISTRADOR" || $_SESSION["rols"]->name_class == "SUPERVISOR") {
                     ?>

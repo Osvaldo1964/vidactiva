@@ -8,7 +8,7 @@ class centersController
 	{
 		//echo '<pre>'; print_r($_POST); echo '</pre>';exit;
 
-		if (isset($_POST["dane"])) {
+		if (isset($_POST["name"])) {
 			echo '<script>
 				matPreloader("on");
 				fncSweetAlert("loading", "Loading...", "");
@@ -16,7 +16,7 @@ class centersController
 
 			/* Validamos la sintaxis de los campos */
 			if (
-				preg_match('/[a-zA-Z0-9]+/', $_POST["dane"]) &&
+				preg_match('/[a-zA-Z0-9]+/', $_POST["name"]) &&
 				preg_match('/^[a-zA-Z0-9\s\.\,\;\:\!\?\@\#\$\%\^\&\*\(\)\_\+\-\=\[\]\{\}\<\>\/\\\\]+$/u', $_POST["name"])
 			) {
 
@@ -24,12 +24,7 @@ class centersController
 				$data = array(
 					"id_department_center" => $_POST["dpto_student"],
 					"id_municipality_center" => $_POST["muni_student"],
-					"dane_center" => $_POST["dane"],
-					"secr_center" => $_POST["secr_center"],
 					"name_center" => trim(strtoupper($_POST["name"])),
-					"level_center" => $_POST["level_center"],
-					"org_center" => $_POST["org_center"],
-					"sector_center" => $_POST["sector_center"],
 					"address_center" => trim(TemplateController::capitalize($_POST["address"])),
 					"email_center" => trim(strtolower($_POST["email"])),
 					"phone_center" =>  $_POST["phone"],
