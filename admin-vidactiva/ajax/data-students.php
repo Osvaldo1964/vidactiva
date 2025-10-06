@@ -25,7 +25,7 @@ class DatatableController
             $this->allData = array();
 
             /* El total de registros de la data */
-            $url = "relations?rel=students,departments,municipalities,schools&type=student,department,municipality,school&select=id_student&linkTo=date_created_student&between1=" .
+            $url = "relations?rel=students,departments,municipalities,centers&type=student,department,municipality,center&select=id_student&linkTo=date_created_student&between1=" .
                 $_GET["between1"] . "&between2=" . $_GET["between2"];
             $method = "GET";
             $fields = array();
@@ -47,17 +47,17 @@ class DatatableController
                 $recordsFiltered = 0;
                 if (preg_match('/^[0-9A-Za-zñÑáéíóú ]{1,}$/', $_POST['search']['value'])) {
                     //$linkTo = ["document_student", "lastname_student", "surname_student", "firstname_student", "secondname_student", "email_student", "name_department", "name_municipality", "name_place"];
-                    $linkTo = ["fullname_student", "email_student", "document_student", "name_department", "name_municipality", "name_school"];
+                    $linkTo = ["fullname_student", "email_student", "document_student", "name_department", "name_municipality", "name_center"];
                     $search = str_replace(" ", "_", $_POST['search']['value']);
                     foreach ($linkTo as $key => $value) {
-                        $url = "relations?rel=students,departments,municipalities,schools&type=student,department,municipality,school&select=" .
+                        $url = "relations?rel=students,departments,municipalities,centers&type=student,department,municipality,center&select=" .
                             $select . "&linkTo=" . $value . "&search=" . $search;
                         $data = CurlController::request($url, $method, $fields)->results;
                         if ($data  != "Not Found") {
                             $recordsFiltered =  $recordsFiltered + count($data);
                         }
 
-                        $url = "relations?rel=students,departments,municipalities,schools&type=student,department,municipality,school&select=" .
+                        $url = "relations?rel=students,departments,municipalities,centers&type=student,department,municipality,center&select=" .
                             $select . "&linkTo=" . $value . "&search=" . $search . "&orderBy=" . $orderBy . "&orderMode=" . $orderType .
                             "&startAt=" . $start . "&endAt=" . $length;
                         $data = CurlController::request($url, $method, $fields)->results;
@@ -77,7 +77,7 @@ class DatatableController
                 }
             } else {
                 /* Seleccionar datos */
-                $url = "relations?rel=students,departments,municipalities,schools&type=student,department,municipality,school&select=" .
+                $url = "relations?rel=students,departments,municipalities,centers&type=student,department,municipality,center&select=" .
                     $select . "&linkTo=date_created_student&between1=" . $_GET["between1"] . "&between2=" . $_GET["between2"] .
                     "&orderBy=" . $orderBy . "&orderMode=" . $orderType . "&startAt=" . $start . "&endAt=" . $length;
 
@@ -124,7 +124,7 @@ class DatatableController
                 $fullname_student = $value->fullname_student;
                 $name_department = $value->name_department;
                 $name_municipality = $value->name_municipality;
-                $name_school = $value->name_school;
+                $name_center = $value->name_center;
                 $email_student = $value->email_student;
 
                 $dataJson .= '{ 
@@ -134,7 +134,7 @@ class DatatableController
             		"fullname_student":"' . $fullname_student . '",
             		"name_department":"' . $name_department . '",
                     "name_municipality":"' . $name_municipality . '",
-                    "name_school":"' . $name_school . '",
+                    "name_center":"' . $name_center . '",
                     "email_student":"' . $email_student . '",
             		"actions":"' . $actions . '"
             	},';

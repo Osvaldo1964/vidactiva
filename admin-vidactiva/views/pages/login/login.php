@@ -7,6 +7,8 @@
                 <!-- <img src="<?php echo TemplateController::srcImg() ?>views/assets/img/global_logo.png" style="width:250px" alt="User Image"> -->
                 <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_fundaescol.jpg" style="ml-10" width="55%" alt="User Image">
             </div>
+            <br>
+            <p class="login-box-msg"><strong>PROGRAMA DE ATENCION INTEGRAL DEL ADULTO MAYOR</strong></p>
             <div class="card-body">
                 <p class="login-box-msg">Inicio de Sesión</p>
 

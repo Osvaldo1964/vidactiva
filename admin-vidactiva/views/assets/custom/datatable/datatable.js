@@ -368,7 +368,7 @@ function execDatatable(text) {
             { "data": "fullname_student" },
             { "data": "name_department" },
             { "data": "name_municipality" },
-            { "data": "name_school" },
+            { "data": "name_center" },
             { "data": "email_student" },
             { "data": "actions", "orderable": false, "search": false }
         ];

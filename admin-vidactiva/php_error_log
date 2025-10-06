@@ -24581,3 +24581,9 @@ Stack trace:
 [06-Oct-2025 11:14:31 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
 [06-Oct-2025 11:14:41 America/Bogota] PHP Warning:  Undefined variable $students in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\centers\actions\edit.php on line 66
 [06-Oct-2025 11:14:41 America/Bogota] PHP Warning:  Attempt to read property "id_center_student" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\centers\actions\edit.php on line 66
+[06-Oct-2025 11:25:28 America/Bogota] PHP Warning:  Undefined variable $students in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\centers\actions\edit.php on line 66
+[06-Oct-2025 11:25:28 America/Bogota] PHP Warning:  Attempt to read property "id_center_student" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\centers\actions\edit.php on line 66
+[06-Oct-2025 15:22:03 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[06-Oct-2025 15:22:03 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[06-Oct-2025 15:23:16 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[06-Oct-2025 15:23:16 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76

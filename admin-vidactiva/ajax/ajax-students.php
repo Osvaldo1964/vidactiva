@@ -334,7 +334,7 @@ class RegisterController
         $ieds = CurlController::request($url, $method, $fields)->results;
         $cadena2 = ""; //'<select name="munis" id="munis">';
 
-        $cadena2 .= "<option value=''>Seleccione Institución</option>";
+        $cadena2 .= "<option value=''>Seleccione Centro</option>";
         foreach ($ieds as $key => $value) {
             $cadena2 .= "<option value='" . $value->id_school . "'>" . $value->name_school . "</option>";
         }
@@ -358,7 +358,7 @@ class RegisterController
         //$cadena2 .= "<option value=''>Seleccione Institución</option>";
         if ($ieds->status == 200) {
             $ieds = $ieds->results;
-            $cadena2 .= "<option value=''>Seleccione Institución</option>";
+            $cadena2 .= "<option value=''>Seleccione Centro</option>";
             foreach ($ieds as $key => $value) {
                 if ($this->edReg == 1 && $this->scSelected == $value->id_school) {
                     $cadena2 .= "<option value='" . $value->id_school . "' data-ied='" . $value->name_school . "' selected>" . $value->name_school . "</option>";

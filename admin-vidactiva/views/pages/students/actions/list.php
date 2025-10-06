@@ -62,7 +62,7 @@ if (isset($_GET["start"]) && isset($_GET["end"])) {
                     <th>Nombres y Apellidos</th>
                     <th>Departamento</th>
                     <th>Municipio</th>
-                    <th>Institución</th>
+                    <th>Centro</th>
                     <th>Email</th>
                     <th>Acciones</th>
                 </tr>

@@ -254,7 +254,7 @@ class RegisterController
 
         //echo '<pre>'; print_r($url); echo '</pre>';
 
-        $cadena2 .= "<option value=''>Seleccione Institución</option>";
+        $cadena2 .= "<option value=''>Seleccione Centro</option>";
         foreach ($ieds as $key => $value) {
             $cadena2 .= "<option value='" . $value->id_school . "'>" . $value->name_school . "</option>";
         }
@@ -274,7 +274,7 @@ class RegisterController
         $ieds = CurlController::request($url, $method, $fields);
         //echo '<pre>'; print_r($ieds); echo '</pre>';exit;
         $cadena2 = ""; //'<select name="munis" id="munis">';
-        $cadena2 .= "<option value=''>Seleccione Institución</option>";
+        $cadena2 .= "<option value=''>Seleccione Centro</option>";
         if ($ieds->status == 200) {
             $ieds = $ieds->results;
             //$cadena2 .= "<option value=''>Seleccione Institución</option>";

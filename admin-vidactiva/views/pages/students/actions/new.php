@@ -8,34 +8,6 @@
         <div class="card-header">
         </div>
         <div class="card-body">
-            <div class="form-row col-md-12">
-                <!-- Grupo -->
-                <div class="input-group col-md-4">
-                    <?php
-                    $groups_student = file_get_contents("views/assets/json/groups_student.json");
-                    $groups_student = json_decode($groups_student, true);
-                    ?>
-                    <label class="input-group-text" for="group_student">Grupo</label>
-                    <select class="form-select" name="group_student" id="group_student" required>
-                        <option value>Seleccione Grupo</option>
-                        <?php foreach ($groups_student as $key => $value) : ?>
-                            <option value="<?php echo $value["name"] ?>"><?php echo $value["name"] ?></option>
-                        <?php endforeach ?>
-                    </select>
-
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
-                </div>
-
-                <!-- Fecha de Ingreso -->
-                <div class="input-group col-md-3">
-                    <label class="input-group-text" for="begin_student">Fecha de Registro</label>
-                    <input type="date" class="form-control" name="begin_student" id="begin_student" required>
-
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
-                </div>
-            </div>
             <div class="form-row col-md-12 mt-2">
                 <!-- Departamentos -->
                 <div class="input-group col-md-3">
@@ -53,27 +25,9 @@
 
                 <!-- Instituciones -->
                 <div class="input-group col-md-4">
-                    <label class="input-group-text" for="ied_student">Centro de Interés</label>
+                    <label class="input-group-text" for="ied_student">Centro de Bienestar</label>
                     <select class="form-select" id="ied_student" name="ied_student" onchange="setNombre()" required>
                     </select>
-                </div>
-
-                <!-- Grado -->
-                <div class="input-group col-md-2">
-                    <?php
-                    $degrees_student = file_get_contents("views/assets/json/degrees.json");
-                    $degrees_student = json_decode($degrees_student, true);
-                    ?>
-                    <label class="input-group-text" for="degree_student">Grado..</label>
-                    <select class="form-select" name="degree_student" id="degree_student" required>
-                        <option value>Grado....</option>
-                        <?php foreach ($degrees_student as $key => $value) : ?>
-                            <option value="<?php echo $value["name"] ?>"><?php echo $value["name"] ?></option>
-                        <?php endforeach ?>
-                    </select>
-
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
                 </div>
             </div>
 
