@@ -5,7 +5,7 @@
             <div class="card-header text-center">
                 <!-- <a href="../../index2.html" class="h1"><b>Admin</b>LTE</a> -->
                 <!-- <img src="<?php echo TemplateController::srcImg() ?>views/assets/img/global_logo.png" style="width:250px" alt="User Image"> -->
-                <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_fundaescol.jpg" style="ml-10" width="55%" alt="User Image">
+                <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_entre.png" style="ml-10" width="55%" alt="User Image">
             </div>
             <br>
             <p class="login-box-msg"><strong>PROGRAMA DE ATENCION INTEGRAL DEL ADULTO MAYOR</strong></p>

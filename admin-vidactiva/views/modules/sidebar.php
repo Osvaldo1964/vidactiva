@@ -591,12 +591,12 @@ $rolUser = $_SESSION["user"]->id_class_user;
         <!-- /.sidebar-menu -->
         <br><br>
         <div class="container justify-content: center; text-align: center;">
-            <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_fundaescol.jpg" width="200" alt="User Image">
+            <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_entre.png" width="200" alt="User Image">
         <br><br><br>
             <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_dpto.png" width="200" alt="User Image">
-        <br><br>
+<!--         <br><br>
             <img src="<?php echo TemplateController::srcImg() ?>views/img/logos/logo_entre.png" alt="User Image">
         </div>
-    </div>
-    <!-- /.sidebar -->
+ -->    </div>
+    <!-- /.sidebar  logo_fundaescol.jpg --> 
 </aside>

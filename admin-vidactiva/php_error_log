@@ -24587,3 +24587,13 @@ Stack trace:
 [06-Oct-2025 15:22:03 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
 [06-Oct-2025 15:23:16 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
 [06-Oct-2025 15:23:16 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[14-Oct-2025 09:10:07 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[14-Oct-2025 09:10:07 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[01-Nov-2025 11:32:12 America/Bogota] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\admins.controller.php on line 16
+[01-Nov-2025 11:32:12 America/Bogota] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\admins.controller.php on line 89
+[01-Nov-2025 11:54:05 America/Bogota] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\admins.controller.php on line 16
+[01-Nov-2025 11:54:05 America/Bogota] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\admins.controller.php on line 89
+[01-Nov-2025 11:54:11 America/Bogota] PHP Warning:  Attempt to read property "status" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\admins.controller.php on line 16
+[01-Nov-2025 11:54:11 America/Bogota] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\admins.controller.php on line 89
+[01-Nov-2025 11:58:46 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[01-Nov-2025 11:58:46 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
