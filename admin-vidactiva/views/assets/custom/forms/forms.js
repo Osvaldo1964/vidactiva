@@ -1,5 +1,5 @@
-let latitude;
-let longitude;
+/*let latitude;
+let longitude; */
 
 
 /* Validacion de formularios */
@@ -113,6 +113,39 @@ function supDptos() {
       $("#dpto_support").html("");
       $("#dpto_support").html(response);
       $('#dpto_support').trigger('change');
+    }
+  })
+}
+
+function selDeparts() {
+  console.log("escoger departamentos pqr");
+  var edReg = document.getElementById('edReg').value;
+  if (edReg == 1) {
+    var dpSelected = document.getElementById('dpSelected').value;
+    var mnSelected = document.getElementById('mnSelected').value;
+  } else {
+    var newPqr = 1;
+    var dpSelected = "";
+    var mnSelected = "";
+  }
+
+  var data = new FormData();
+  data.append("newPqr", newPqr);
+  data.append("dpSelected", dpSelected);
+  data.append("mnSelected", mnSelected);
+  data.append("edReg", edReg);
+
+  $.ajax({
+    url: "ajax/ajax-pqr.php",
+    method: "POST",
+    data: data,
+    contentType: false,
+    cache: false,
+    processData: false,
+    success: function (response) {
+      $("#dpto_pqr").html("");
+      $("#dpto_pqr").html(response);
+      $('#dpto_pqr').trigger('change');
     }
   })
 }

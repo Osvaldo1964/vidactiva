@@ -24597,3 +24597,11 @@ Stack trace:
 [01-Nov-2025 11:54:11 America/Bogota] PHP Warning:  Attempt to read property "results" on null in C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\admins.controller.php on line 89
 [01-Nov-2025 11:58:46 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
 [01-Nov-2025 11:58:46 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[15-Nov-2025 09:17:04 America/Bogota] PHP Warning:  include(views/pages/regpqrs/regpqrs.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\template.php on line 279
+[15-Nov-2025 09:17:04 America/Bogota] PHP Warning:  include(): Failed opening 'views/pages/regpqrs/regpqrs.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\template.php on line 279
+[15-Nov-2025 09:29:40 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[15-Nov-2025 09:29:40 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[15-Nov-2025 10:30:44 America/Bogota] PHP Parse error:  Unclosed '{' on line 4 in C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\pqrs.controller.php on line 220
+[15-Nov-2025 10:38:34 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[15-Nov-2025 10:38:34 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[16-Nov-2025 10:25:43 America/Bogota] PHP Warning:  Undefined array key "except_field" in C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\pqrs.controller.php on line 248

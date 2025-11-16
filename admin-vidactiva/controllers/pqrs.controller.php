@@ -216,53 +216,56 @@ class PqrsController
         }
     }
 
-    function getGeocodeData()
+        /* Creacion de Marcas */
+    public function create_ext()
     {
-        $address = $this->addressmap;
-        $address = $address;
-        //echo '<pre>'; print_r($address); echo '</pre>';
-        $googleMapUrl = "https://maps.googleapis.com/maps/api/geocode/json?address=" . urlencode($address) . "&key=AIzaSyDDTJ5uq4WEhP4noQ6DKM7aFVUYwGabdu8";
-        //echo '<pre>'; print_r($googleMapUrl); echo '</pre>';
-        $geocodeResponseData = file_get_contents($googleMapUrl);
-        $google_maps_json = file_get_contents($googleMapUrl);
-        $google_maps_array = json_decode($google_maps_json, true);
-        //echo '<pre>'; print_r($google_maps_array); echo '</pre>';
-        $lat = $google_maps_array["results"][0]["geometry"]["location"]["lat"];
-        $lng = $google_maps_array["results"][0]["geometry"]["location"]["lng"];
-        $fta = $google_maps_array["results"][0]["formatted_address"];
-        //echo $lat . "  " . $lng . " " . $fta;
-        $responseData = json_decode($geocodeResponseData, true);
-        $arrResponse = array("latitud" => $lat, "longitud" => $lng, "formattedAddress" => $fta);
-        echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
-        return;
-    }
+        if (isset($_POST["except"])) {
+            echo '<script>
+                    matPreloader("on");
+                    fncSweetAlert("loading", "Loading...", "");
+                  </script>';  
 
-    function getGeocodeData2($address)
-    {
-        $address = urlencode($address);
-        $googleMapUrl = "https://maps.googleapis.com/maps/api/geocode/json?address={$address}&key=AIzaSyDDTJ5uq4WEhP4noQ6DKM7aFVUYwGabdu8";
-        $geocodeResponseData = file_get_contents($googleMapUrl);
-        $responseData = json_decode($geocodeResponseData, true);
-        if ($responseData['status'] == 'OK') {
-            $latitude = isset($responseData['results'][0]['geometry']['location']['lat']) ? $responseData['results'][0]['geometry']['location']['lat'] : "";
-            $longitude = isset($responseData['results'][0]['geometry']['location']['lng']) ? $responseData['results'][0]['geometry']['location']['lng'] : "";
-            $formattedAddress = isset($responseData['results'][0]['formatted_address']) ? $responseData['results'][0]['formatted_address'] : "";
-            if ($latitude && $longitude && $formattedAddress) {
-                $geocodeData = array();
-                array_push($geocodeData, $latitude, $longitude, $formattedAddress);
-                return $geocodeData;
+            /* Validamos la sintaxis de los campos */
+            if (
+                preg_match('/^[0-9A-Za-zñÑáéíóú ]{1,}$/', $_POST["name"])
+                /*  &&
+                preg_match('/^[.a-zA-Z0-9_]+([.][.a-zA-Z0-9_]+)*[@][a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,4}$/', $_POST["email"]) &&
+                preg_match('/^[0-9A-Za-zñÑáéíóú ]{1,}$/', $_POST["address"]) &&
+                preg_match('/^[0-9A-Za-zñÑáéíóú ]{1,}$/', $_POST["message"]) */
+            ) {
+
+                /* Agrupamos la información */
+                $data = array(
+                    "name_pqr" => $_POST["name"],
+                    "email_pqr" => $_POST["email"],
+                    "phone_pqr" => $_POST["phone"],
+                    "message_pqr" => $_POST["message"],
+                    "date_created_pqr" => date("Y-m-d")
+                );
+
+				$url = "pqrs?token=no&except=" . $_POST["except_field"];
+				$method = "POST";
+				$fields = $data;
+				$response = CurlController::request($url, $method, $fields);
+
+                /* Respuesta de la API */
+                if ($response->status == 200) {
+                    echo '<script>
+					fncFormatInputs();
+					matPreloader("off");
+					fncSweetAlert("close", "", "");
+					fncSweetAlert("success", "Registro grabado correctamente", "");
+				</script>';
+                }
             } else {
-                return false;
+                echo '<script>
+					fncFormatInputs();
+					matPreloader("off");
+					fncSweetAlert("close", "", "");
+					fncNotie(3, "Error de sintaxys en los campos");
+				</script>';
             }
-        } else {
-            echo "ERROR: {$responseData['status']}";
-            return false;
         }
     }
-}
 
-if (isset($_POST["addressmap"])) {
-    $validate = new PqrsController();
-    $validate->addressmap = $_POST["addressmap"];
-    $validate->getGeocodeData();
 }
