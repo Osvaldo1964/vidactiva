@@ -24605,3 +24605,46 @@ Stack trace:
 [15-Nov-2025 10:38:34 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
 [15-Nov-2025 10:38:34 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
 [16-Nov-2025 10:25:43 America/Bogota] PHP Warning:  Undefined array key "except_field" in C:\xampp\htdocs\vidactiva\admin-vidactiva\controllers\pqrs.controller.php on line 248
+[17-Nov-2025 10:59:29 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[17-Nov-2025 10:59:29 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[17-Nov-2025 11:03:57 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[17-Nov-2025 11:03:57 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[17-Nov-2025 11:04:51 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[17-Nov-2025 11:04:51 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[17-Nov-2025 11:13:17 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 11:13:34 America/Bogota] PHP Warning:  Undefined variable $idPqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 30
+[17-Nov-2025 11:13:34 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on int in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[17-Nov-2025 11:13:34 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on int in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 45
+[17-Nov-2025 11:13:34 America/Bogota] PHP Warning:  Attempt to read property "id_crew_pqr" on int in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
+[17-Nov-2025 11:13:34 America/Bogota] PHP Warning:  Attempt to read property "dateasign_pqr" on int in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[17-Nov-2025 11:13:36 America/Bogota] PHP Warning:  Undefined variable $idPqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 30
+[17-Nov-2025 11:13:36 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on int in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 36
+[17-Nov-2025 11:13:36 America/Bogota] PHP Warning:  Attempt to read property "id_pqr" on int in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 45
+[17-Nov-2025 11:13:36 America/Bogota] PHP Warning:  Attempt to read property "id_crew_pqr" on int in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 63
+[17-Nov-2025 11:13:36 America/Bogota] PHP Warning:  Attempt to read property "dateasign_pqr" on int in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[17-Nov-2025 11:17:26 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[17-Nov-2025 11:17:51 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 11:17:58 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 11:23:51 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 11:27:02 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 11:28:37 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 11:28:45 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 11:30:47 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 11:31:42 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 11:31:49 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:08:14 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:08:21 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:09:40 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:09:46 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:10:30 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:10:37 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:12:08 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:12:14 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:12:31 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:12:37 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:13:04 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:13:11 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\asign.php on line 55
+[17-Nov-2025 12:13:39 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[17-Nov-2025 12:13:47 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
+[17-Nov-2025 12:17:43 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[17-Nov-2025 12:17:43 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76

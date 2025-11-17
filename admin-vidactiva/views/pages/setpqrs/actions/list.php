@@ -45,6 +45,7 @@ if (isset($_GET["start"]) && isset($_GET["end"])) {
                     <th>No.</th>
                     <th>Nombre</th>
                     <th>E-mail</th>
+                    <th>Teléfono</th>
                     <th>Detalle PQR</th>
                     <th>Fecha Creacion</th>
                     <th>Estado</th>

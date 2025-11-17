@@ -34,11 +34,11 @@ class DatatableController
 			}
 
 			/* Búsqueda de datos */
-			$select = "id_pqr,name_pqr,email_pqr,address_pqr,message_pqr,id_user_pqr,id_user,username_user,status_pqr,date_created_pqr";
+			$select = "id_pqr,name_pqr,email_pqr,phone_pqr,message_pqr,id_user_pqr,id_user,username_user,status_pqr,date_created_pqr";
 
 			if (!empty($_POST['search']['value'])) {
 				if (preg_match('/^[0-9A-Za-zñÑáéíóú ]{1,}$/', $_POST['search']['value'])) {
-					$linkTo = ["name_pqr,address_pqr,email_pqr,name_crew"];
+					$linkTo = ["name_pqr,email_pqr,fullname_user"];
 					$search = str_replace(" ", "_", $_POST['search']['value']);
 					foreach ($linkTo as $key => $value) {
 						$url = "relations?rel=pqrs,users&type=pqr,user&select=" . $select . "&linkTo=" .
@@ -113,15 +113,15 @@ class DatatableController
 
 				$name_pqr = $value->name_pqr;
 				$email_pqr = $value->email_pqr;
-				$address_pqr = $value->address_pqr;
 				$message_pqr = $value->message_pqr;
+				$phone_pqr = $value->phone_pqr;
 				$date_created_pqr = $value->date_created_pqr;
 
 				$dataJson .= '{ 
             		"id_pqr":"' . ($start + $key + 1) . '",
 					"name_pqr":"' . $name_pqr . '",
                     "email_pqr":"' . $email_pqr . '",
-                    "address_pqr":"' . $address_pqr . '",
+                    "phone_pqr":"' . $phone_pqr . '",
             		"message_pqr":"' . $message_pqr . '",
 					"date_created_pqr":"' . $date_created_pqr . '",
 					"status_pqr":"' . $status_pqr . '",

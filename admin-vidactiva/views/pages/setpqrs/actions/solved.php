@@ -3,7 +3,7 @@ if (isset($routesArray[3])) {
     $security = explode("~", base64_decode($routesArray[3]));
     if ($security[1] == $_SESSION["user"]->token_user) {
         $select = "*";
-        $url = "relations?rel=pqrs,crews&type=pqr,crew&select=" .
+        $url = "relations?rel=pqrs,users&type=pqr,user&select=" .
             $select . "&linkTo=id_pqr&equalTo=" . $security[0];
         $method = "GET";
         $fields = array();
@@ -52,26 +52,26 @@ if (isset($routesArray[3])) {
                 <div class="form-group col-md-4">
                     <label>Cuadrilla</label>
                     <?php
-                    $url = "crews?select=id_crew,name_crew";
+                    $url = "users?select=id_user,fullname_user";
                     $method = "GET";
                     $fields = array();
-                    $crews = CurlController::request($url, $method, $fields)->results;
+                    $users = CurlController::request($url, $method, $fields)->results;
                     ?>
 
                     <div class="form-group">
                         <select class="form-control select2" name="crew" style="width:100%" disabled>
-                            <?php if ($pqrs->id_crew_pqr != NULL) : ?>
-                                <?php foreach ($crews as $key => $value) : ?>
-                                    <?php if ($value->id_crew == $pqrs->id_crew_pqr) : ?>
-                                        <option value="<?php echo $pqrs->id_crew_pqr ?>" selected><?php echo $pqrs->name_crew ?></option>
+                            <?php if ($pqrs->id_user_pqr != NULL) : ?>
+                                <?php foreach ($users as $key => $value) : ?>
+                                    <?php if ($value->id_user == $pqrs->id_user_pqr) : ?>
+                                        <option value="<?php echo $pqrs->id_user_pqr ?>" selected><?php echo $pqrs->fullname_user ?></option>
                                     <?php else : ?>
-                                        <option value="<?php echo $value->id_crew ?>"><?php echo $value->name_crew ?></option>
+                                        <option value="<?php echo $value->id_user ?>"><?php echo $value->fullname_user ?></option>
                                     <?php endif ?>
                                 <?php endforeach ?>
                             <?php else : ?>
-                                <option value="">Seleccione Cuadrilla</option>
-                                <?php foreach ($crews as $key => $value) : ?>
-                                    <option value="<?php echo $value->id_crew ?>"><?php echo $value->name_crew ?></option>
+                                <option value="">Seleccione Usuario</option>
+                                <?php foreach ($users as $key => $value) : ?>
+                                    <option value="<?php echo $value->id_user ?>"><?php echo $value->fullname_user ?></option>
                                 <?php endforeach ?>
                             <?php endif ?>
                         </select>

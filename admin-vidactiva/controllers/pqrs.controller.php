@@ -33,17 +33,6 @@ class PqrsController
                 //echo '<pre>'; print_r($settings); echo '</pre>';exit;
                 $namedpto =  $settings->results[0]->name_department;
                 $namemuni =  $settings->results[0]->name_municipality;
-    
-                /* Verifico la direccion con google */
-                $nombre = trim(TemplateController::capitalize($_POST["name"]));
-                $email  = strtolower($_POST['email']);
-                $address  = strtolower(($_POST['address'])) . ', ' . $namemuni . ', ' . $namedpto;
-                //echo '<pre>'; print_r($address); echo '</pre>';exit;
-                $message  = $_POST['message'];
-                $coordenadas = $this->getGeocodeData2($address);
-                $latitud = $coordenadas[0];
-                $longitud = $coordenadas[1];
-                $newdireccion = $coordenadas[2];
 
                 /* Agrupamos la información */
                 $data = array(
@@ -89,6 +78,7 @@ class PqrsController
     public function asign($id)
     {
         if (isset($_POST["idPqr"])) {
+
             echo '<script>
 					matPreloader("on");
 					fncSweetAlert("loading", "Loading...", "");
@@ -104,7 +94,7 @@ class PqrsController
                 if ($response->status == 200) {
 
                     /* Agrupamos la información */
-                    $data = "dateasign_pqr=" . $_POST["dateasign"] .
+                    $data = "dateasing_pqr=" . $_POST["dateasign"] .
                         "&id_user_pqr=" . $_POST["username"] .
                         "&status_pqr=" . "Assign";
 
@@ -171,6 +161,7 @@ class PqrsController
 
                     /* Agrupamos la información */
                     $data = "datesolved_pqr=" . $_POST["datesolved"] .
+                        "&solution_pqr=" . $_POST["solution"] .
                         "&status_pqr=" . "Success" .
                         "&date_updated_pqr=" . date("Y-m-d");
 
@@ -216,14 +207,14 @@ class PqrsController
         }
     }
 
-        /* Creacion de Marcas */
+    /* Creacion de Marcas */
     public function create_ext()
     {
         if (isset($_POST["except"])) {
             echo '<script>
                     matPreloader("on");
                     fncSweetAlert("loading", "Loading...", "");
-                  </script>';  
+                  </script>';
 
             /* Validamos la sintaxis de los campos */
             if (
@@ -243,10 +234,10 @@ class PqrsController
                     "date_created_pqr" => date("Y-m-d")
                 );
 
-				$url = "pqrs?token=no&except=" . $_POST["except_field"];
-				$method = "POST";
-				$fields = $data;
-				$response = CurlController::request($url, $method, $fields);
+                $url = "pqrs?token=no&except=" . $_POST["except_field"];
+                $method = "POST";
+                $fields = $data;
+                $response = CurlController::request($url, $method, $fields);
 
                 /* Respuesta de la API */
                 if ($response->status == 200) {
@@ -267,5 +258,4 @@ class PqrsController
             }
         }
     }
-
 }

@@ -14,6 +14,18 @@ if ($alerts->status == 200) {
   $alerts = 0;
 }
 
+$totalerts = 0;
+$url = "pqrs?select=id_pqr,status_pqr&linkTo=status_pqr&equalTo=Activo";
+$method = "GET";
+$fields = array();
+$pqrs = CurlController::request($url, $method, $fields);
+//echo '<pre>'; print_r($url); echo '</pre>';exit;
+if ($pqrs->status == 200) {
+  $pqrs = $pqrs->total;
+} else {
+  $pqrs = 0;
+}
+
 ?>
 <nav class="main-header navbar navbar-expand navbar-white navbar-light text-sm bg-info">
   <!-- Left navbar links -->
@@ -30,10 +42,12 @@ if ($alerts->status == 200) {
   <ul class="navbar-nav ml-auto">
     <!-- Messages Dropdown Menu -->
     <li class="nav-item dropdown">
-      <a class="nav-link" href="/">
-        <i class="far fa-comments"></i>
-        <span class="badge badge-danger navbar-badge">3</span>
+      <?php if ($_SESSION["rols"]->name_class == "ADMINISTRADOR" || $_SESSION["rols"]->name_class == "SUPERVISOR") { ?>
+      <a class="nav-link" href="/setpqrs" title="Pqrs">
+        <i class="far fa-comment"></i>
+        <span class="badge badge-info navbar-badge"><?php echo $pqrs ?></span>
       </a>
+      <?php } ?>
     </li>
     <!-- Notifications Dropdown Menu -->
     <li class="nav-item dropdown">
