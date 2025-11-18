@@ -23,12 +23,6 @@ class AdminsController
 					$response2 = CurlController::request($url, $method, $fields);
 					$_SESSION["rols"] = $response2->results[0];
 
-					// Si es un usuario de operaciones, se le asigna el grupo al que pertenece
-					$_SESSION["group"] = 0;
-					$_SESSION["cord"] = 0;
-					$_SESSION["former"] = 0;
-					$_SESSION["psico"] = 0;
-
 					if ($_SESSION["user"]->id_class_user == 4) {
 						$url = "cords?select=id_cord,fullname_cord,id_group_cord&linkTo=email_cord&equalTo=" .
 							$_SESSION["user"]->email_user;
@@ -38,24 +32,7 @@ class AdminsController
 						$_SESSION["group"] = $response3->id_group_cord;
 						$_SESSION["cord"] = $response3->id_cord;
 					}
-					if ($_SESSION["user"]->id_class_user == 5) {
-						$url = "psicos?select=id_psico&linkTo=email_psico&equalTo=" .
-							$_SESSION["user"]->email_user;
-						$method = "GET";
-						$fields = array();
-						$response3 = CurlController::request($url, $method, $fields)->results[0];
-						$_SESSION["psico"] = $response3->id_psico;
-					}
-					if ($_SESSION["user"]->id_class_user == 6) {
-						$url = "formers?select=id_former&linkTo=email_former&equalTo=" .
-							$_SESSION["user"]->email_user;
-						$method = "GET";
-						$fields = array();
-						$response3 = CurlController::request($url, $method, $fields)->results[0];
-						//echo '<pre>'; print_r($url); echo '</pre>';exit;
-						$_SESSION["former"] = $response3->id_former;
-					}
-					//echo '<pre>'; print_r($response3); echo '</pre>';exit;
+
 					// Parametros del Sitio
 					$url = "settings";
 					$method = "GET";
@@ -65,10 +42,6 @@ class AdminsController
 					echo '<script>
 					localStorage.setItem("user", "' . $_SESSION["user"]->id_user . '");
 					localStorage.setItem("class_user", "' . $_SESSION["user"]->id_class_user . '");
-					localStorage.setItem("group", "' . $_SESSION["group"] . '");
-					localStorage.setItem("cord", "' . $_SESSION["cord"] . '");
-					localStorage.setItem("former", "' . $_SESSION["former"] . '");
-					localStorage.setItem("psico", "' . $_SESSION["psico"] . '");
 					localStorage.setItem("username", "' . $_SESSION["user"]->username_user . '");
 					localStorage.setItem("token_user", "' . $_SESSION["user"]->token_user . '");
 					localStorage.setItem("rol_user", "' . $_SESSION["rols"]->name_class . '");
