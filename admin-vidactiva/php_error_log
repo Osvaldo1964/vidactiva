@@ -24648,3 +24648,4 @@ Stack trace:
 [17-Nov-2025 12:13:47 America/Bogota] PHP Warning:  Undefined property: stdClass::$dateasign_pqr in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\pages\setpqrs\actions\solved.php on line 91
 [17-Nov-2025 12:17:43 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
 [17-Nov-2025 12:17:43 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\modules\sidebar.php on line 76
+[18-Nov-2025 20:53:15 America/Bogota] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\vidactiva\admin-vidactiva\views\home.php on line 203

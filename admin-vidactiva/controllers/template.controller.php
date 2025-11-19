@@ -15,7 +15,7 @@ class TemplateController
 	/* Traemos la vista principal */
 	public function index()
 	{
-		include "views/template.php";
+		include "views/home.php";
 	}
 
 	/* Ruta para las imagenes del sistema */
