@@ -45,13 +45,13 @@ class AdminsController
 					localStorage.setItem("username", "' . $_SESSION["user"]->username_user . '");
 					localStorage.setItem("token_user", "' . $_SESSION["user"]->token_user . '");
 					localStorage.setItem("rol_user", "' . $_SESSION["rols"]->name_class . '");
-					window.location = "' . $_SERVER["REQUEST_URI"] . '"
+					window.location = "http://admin-vidactiva.com";
 				</script>';
 
 					echo '<script>
 						fncFormatInputs();
 						localStorage.setItem("token_user", "' . $response->results[0]->token_user . '");
-						window.location = "' . $_SERVER["REQUEST_URI"] . '"
+						window.location = "http://admin-vidactiva.com";
 					</script>';
 				} else {
 					echo '<script>

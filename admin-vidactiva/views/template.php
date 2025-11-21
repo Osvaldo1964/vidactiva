@@ -10,7 +10,7 @@ foreach ($routesArray as $key => $value) {
 }
 if (isset($routesArray[1])) {
   if (
-    $routesArray[1] == "registers" || $routesArray[1] == "regpqrs" || $routesArray[1] == "uploads"
+    $routesArray[1] == "registers" || $routesArray[1] == "regpqrs" || $routesArray[1] == "uploads" || $routesArray[1] == "login"
     || $routesArray[1] == "upcontracts"
   ) {
     $externos = true;
@@ -150,6 +150,7 @@ if (isset($routesArray[1])) {
       "infformers",
       "groupstudents",
       "payrolls",
+      "login",
       "logout",
       "follows"
     ];
@@ -192,14 +193,17 @@ if (isset($routesArray[1])) {
 
   <?php
   if (!isset($_SESSION['user']) && $externos == false) {
-    include "views/pages/login/login.php";
-    echo '</body></head>';
+    echo '<script>
+        window.location = "http://localhost/vidactiva";
+      </script>';
+    //include "views/pages/login/login.php";
+    //echo '</body></head>';
     return;
   }
   ?>
 
   <?php if (
-    isset($_SESSION['user']) || $routesArray[1] != "registers"  || $routesArray[1] != "uploads"
+    isset($_SESSION['user']) || $routesArray[1] != "registers"  || $routesArray[1] != "uploads" || $routesArray[1] != "login"
     && $routesArray[1] != "regpqrs" && $routesArray[1] != "upcontracts"
   ) : ?>
     <!-- Site wrapper -->
@@ -270,6 +274,7 @@ if (isset($routesArray[1])) {
           "dinsformers",
           "groupstudents",
           "payrolls",
+          "login",
           "logout",
           "follows"
         ];
