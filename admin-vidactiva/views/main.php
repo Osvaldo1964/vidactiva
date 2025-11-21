@@ -199,12 +199,8 @@ $externos = true;
   }
   ?>
 
-
     <!-- Site wrapper -->
     <div class="wrapper">
-
-      <!-- Main Sidebar Container -->
-
 
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
@@ -264,19 +260,12 @@ $externos = true;
           "follows"
         ];
 
-        if (!empty($routesArray[1])) {
-          if (in_array($routesArray[1], $validRoutes)) {
-            include "views/pages/" . $routesArray[1] . "/" . $routesArray[1] . ".php";
-          } else {
-            include "views/pages/404/404.php";
-          }
-        } else {
-          include "views/pages/home/home.php";
-        }
         ?>
 
         <!-- Content Header (Page header) -->
         <!-- /.content -->
+         <h1 class="text-center mt-5">BIENVENIDO AL SISTEMA DE GESTION DE CONTRATACION</h1>
+         <a href="http://localhost/vidactiva/admin-vidactiva/views/pages/login/login.php" class="btn btn-primary d-block mx-auto mt-4" style="width: 200px;">Actualizar Contratos</a>
       </div>
       <!-- /.content-wrapper -->
 
@@ -289,7 +278,6 @@ $externos = true;
       <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
-
   
   <script src="views/assets/custom/forms/forms.js"></script>
   <script src="views/assets/custom/forms/reports.js"></script>
