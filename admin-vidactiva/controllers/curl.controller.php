@@ -26,7 +26,6 @@ class CurlController
       
         $response = curl_exec($curl);
         //echo '<pre>'; print_r($curl); echo '</pre>';
-        curl_close($curl);
         $response = json_decode($response);
         //echo $response;
         return $response;
@@ -53,7 +52,7 @@ class CurlController
         ));
 
         $response = curl_exec($curl);
-        curl_close($curl);
+        $response = curl_exec($curl);
         return $response;
     }
 }
