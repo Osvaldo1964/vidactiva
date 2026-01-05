@@ -1,8 +1,8 @@
 <?php
-const BASE_URL = "http://app-encuestas.com/";
+const BASE_URL = "http://app-vidactiva.com/";
 const API_OAUTH_JWT = "http://ovcauth-ovcsystems.com/oauthjwt/token";
 const API_VALID_JWT = "http://ovcauth-ovcsystems.com/oauthjwt/tokenValidate/";
-const BASE_URL_API = "http://api-encuestas.com/";
+const BASE_URL_API = "http://api-vidactiva.com/";
 
 //Zona horaria
 date_default_timezone_set("America/Bogota");
@@ -10,7 +10,7 @@ date_default_timezone_set("America/Bogota");
 //Datos de conexión a Base de Datos
 const CONNECTION = true;
 const DB_HOST = "localhost";
-const DB_NAME = "db-encuestas";
+const DB_NAME = "db-vidactiva";
 const DB_USER = "root";
 const DB_PASSWORD = "";
 const DB_CHARSET = "utf8";

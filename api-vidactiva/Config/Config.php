@@ -1,17 +1,17 @@
 <?php
 
-const BASE_URL = "http://api-encuestas.com/";
+const BASE_URL = "http://api-vidactiva.com/";
 
 //Datos de conexión a Base de Datos
 const CONNECTION = true;
 const DB_HOST = "localhost";
-const DB_NAME = "db-encuestas";
+const DB_NAME = "db-vidactiva";
 const DB_USER = "root";
 const DB_PASSWORD = "";
 const DB_CHARSET = "utf8";
 
 const API_OAUTH_JWT = "http://ovcauth-ovcsystems.com/oauthjwt/token";
-const API_AUTORIZATION = "http://api-encuestas.com/";
+const API_AUTORIZATION = "http://api-vidactiva.com/";
 
 // Scope Sistema ventas
 const CLIENT_JWT = 9;

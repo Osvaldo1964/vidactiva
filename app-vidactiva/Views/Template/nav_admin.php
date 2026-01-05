@@ -45,13 +45,13 @@
             <li class="treeview">
                 <a class="app-menu__item" href="#" data-toggle="treeview">
                     <i class="app-menu__icon fa fa-check-square-o" aria-hidden="true"></i>
-                    <span class="app-menu__label">Control Encuestas</span>
+                    <span class="app-menu__label">Control Administrativo</span>
                     <i class="treeview-indicator fa fa-angle-right"></i>
                 </a>
                 <ul class="treeview-menu">
                     <?php if (!empty($_SESSION['permisos'][4]['r_permiso'])) { ?>
-                        <li><a class="treeview-item" href="<?= base_url(); ?>terceros"><i class="icon fa fa-circle-o"></i>
-                                Terceros</a></li>
+                        <li><a class="treeview-item" href="<?= base_url(); ?>centros"><i class="icon fa fa-circle-o"></i>
+                                Centros de Atención</a></li>
                     <?php } ?>
                     <?php if (!empty($_SESSION['permisos'][5]['r_permiso'])) { ?>
                         <li><a class="treeview-item" href="<?= base_url(); ?>encuestas"><i class="icon fa fa-circle-o"></i>
@@ -77,12 +77,12 @@
                 </a>
                 <ul class="treeview-menu">
                     <?php if (!empty($_SESSION['permisos'][7]['r_permiso'])) { ?>
-                        <li><a class="treeview-item" href="<?= base_url(); ?>infencuestas"
-                                style="padding-left: 40px;"><i class="icon fa fa-circle-o"></i> Informe Encuestas</a></li>
+                        <li><a class="treeview-item" href="<?= base_url(); ?>infencuestas" style="padding-left: 40px;"><i
+                                    class="icon fa fa-circle-o"></i> Informe Encuestas</a></li>
                     <?php } ?>
                     <?php if (!empty($_SESSION['permisos'][8]['r_permiso'])) { ?>
-                        <li><a class="treeview-item" href="<?= base_url(); ?>grafencuestas"
-                                style="padding-left: 40px;"><i class="icon fa fa-circle-o"></i> Gráficos de Encuestas</a></li>
+                        <li><a class="treeview-item" href="<?= base_url(); ?>grafencuestas" style="padding-left: 40px;"><i
+                                    class="icon fa fa-circle-o"></i> Gráficos de Encuestas</a></li>
                     <?php } ?>
                 </ul>
             </li>
