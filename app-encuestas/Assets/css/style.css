@@ -1,0 +1,116 @@
+.app-sidebar__user-avatar {
+	width: 48px;
+	background: gray;
+	padding: 6px;
+}
+
+.app-sidebar__toggle {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15pt;
+}
+
+.app-sidebar__toggle::before {
+	display: none;
+}
+
+.headerRegister,
+.header-primary {
+	background: #40826D;
+	color: #FFF;
+}
+
+.headerUpdate {
+	background: #40826D;
+	color: #FFF;
+}
+
+.notBlock {
+	display: none;
+}
+
+/*Estilos login*/
+#divLoading {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(254, 254, 255, .65);
+	z-index: 9999;
+	display: none;
+}
+
+#divLoading img {
+	width: 50px;
+	height: 50px;
+}
+
+.required {
+	color: red;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+/* Print Styles */
+@media print {
+
+	/* Hide Sidebars, Headers, and unnecessary UI */
+	.app-header,
+	.app-sidebar,
+	.app-breadcrumb,
+	.noprint {
+		display: none !important;
+	}
+
+	/* Hide Action Buttons and Submit Button */
+	.btn-group,
+	#formGrafica button[type="submit"] {
+		display: none !important;
+	}
+
+	/* Adjust Main Content Layout */
+	.app-content {
+		margin: 0 !important;
+		padding: 0 !important;
+		background-color: white !important;
+	}
+
+	/* Ensure Graphics Tile takes up full width */
+	.tile {
+		box-shadow: none !important;
+		border: none !important;
+		margin-bottom: 0 !important;
+	}
+
+	/* Ensure Chart is visible and sized correctly */
+	#divGrafica {
+		display: block !important;
+		width: 100% !important;
+	}
+
+	canvas {
+		max-height: 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+/* Survey Form Compact Styles */
+.survey-card-header h6 {
+	font-size: 0.95rem;
+}
+
+.survey-option-label {
+	font-size: 0.85rem;
+}
+
+.survey-input-sm {
+	font-size: 0.85rem !important;
+}
